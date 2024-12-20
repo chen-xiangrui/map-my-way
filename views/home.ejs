@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="home-container">
+    <header>
+      <button>Months</button>
+      <button>New Event</button>
+    </header>
+    <div class="calendar">
+      <button>DEC 2024</button>
+      <div class="month-view">
+        <!-- Display calendar -->
+        <% events.forEach(event => { %>
+          <div class="event">
+            <p><%= event.title %></p>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

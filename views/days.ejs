@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Day View</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="day-container">
+    <h1>Events for <%= date %></h1>
+    <% dayEvents.forEach(event => { %>
+      <div class="event">
+        <p><%= event.title %></p>
+        <p>Route: <%= event.route %></p>
+      </div>
+    <% }); %>
+  </div>
+</body>
+</html>
+
